@@ -34,7 +34,7 @@ public class Main {
     }
 
     private static int[] sortArray(int[] sort) {
-
+        // Bubble sort
         for (int i = 0; i < sort.length - 1; i++) {
             for (int j = 0; j < sort.length - i - 1; j++) {
                 if (sort[j] > sort[j + 1]) {
