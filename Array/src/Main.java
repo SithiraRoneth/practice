@@ -48,13 +48,15 @@ public class Main {
     }
 
     private static int[] reverseArray(int[] s) {
-        /*int[] temp = new int[s.length];
+       /* int[] temp = new int[s.length];
         for (int i = 0; i < s.length / 2; i++) {
             temp[i] = s[i];
             s[i] = s[s.length - 1 - i];
             s[s.length - 1 - i] = temp[i];
         }
-        return s; // Return the re*/
+        return s; */
+
+        //Using List
 
         List<Integer>list = Arrays.stream(s).boxed().collect(Collectors.toList());
         Collections.reverse(list);
