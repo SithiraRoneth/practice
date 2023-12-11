@@ -17,5 +17,11 @@ public class Main {
 
         System.out.println(list);
 
+        int[] sort = {10,1,46,67,23,100,30};
+
+        List<Integer>integerList = Arrays.stream(sort).boxed().sorted().collect(Collectors.toList());
+        Collections.sort(integerList);
+        System.out.println(integerList);
+
     }
 }
