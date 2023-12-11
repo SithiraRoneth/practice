@@ -23,5 +23,10 @@ public class Main {
         Collections.sort(integerList);
         System.out.println(integerList);
 
+        int[] duplicate = {10,20,10,40,54,23,32,23,54,40};
+
+        HashSet hashSet1 = new HashSet(Arrays.stream(duplicate).boxed().collect(Collectors.toList()));
+        System.out.println(hashSet1);
+
     }
 }
